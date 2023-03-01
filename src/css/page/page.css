@@ -1,0 +1,71 @@
+button.btn-show-popup {
+    border-radius: 100000px;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid var(--black);
+    box-shadow: 5px 5px 0px var(--black);
+    color: var(--black);
+    background: #f582ae;
+}
+
+button.btn-show-popup svg {
+    padding: 1vh;
+    font-size: 4vh;
+}
+
+button.btn-show-popup p {
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    transition: width 200ms, height 200ms;
+}
+
+button.btn-show-popup:hover p {
+    width: calc(24 * 0.5rem);
+    height: 100%;
+}
+
+button.create-first {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100000px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid var(--black);
+    box-shadow: -5px 5px 0px var(--black);
+    color: var(--black);
+    background: #f582ae;
+    padding: 4vh 4vw;
+    font-size: 3vh;
+    transition: box-shadow 200ms;
+}
+
+button.create-first:hover {
+    box-shadow: -10px 10px 0px var(--black);
+}
+
+.App.dark button.create-first {
+    border: 3px solid var(--d-line);
+    box-shadow: -5px 5px 0px var(--d-line);
+    background: var(--white);
+}
+
+.App.dark button.create-first:hover {
+    box-shadow: -10px 10px 0px var(--d-line);
+}
+
+.App.dark button.btn-show-popup {
+    border: 3px solid var(--d-line);
+    box-shadow: 5px 5px 0px var(--d-line);
+    background: var(--white);
+}

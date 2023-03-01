@@ -1,0 +1,29 @@
+{
+    "name": "Favoris",
+    "short_name": "Fav",
+    "start_url": "./index.html",
+    "id": "./index.html",
+    "description": "Favoris permet de gérer les onglets",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/logo/site.svg",
+            "type": "image/svg",
+            "sizes": "144x144"
+        },
+        {
+            "src": "images/logo/site.svg",
+            "type": "image/svg",
+            "sizes": "256x256",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/logo/site-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

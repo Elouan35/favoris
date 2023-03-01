@@ -1,0 +1,27 @@
+.sign-out {
+    cursor: pointer;
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    outline: none;
+    border: none;
+    background: rgb(254, 246, 228);
+    padding: 10px;
+    border: 3px solid var(--black);
+    box-shadow: -5px 5px 0px var(--black);
+    border-radius: 100000px;
+}
+
+.sign-out svg {
+    font-size: 1.5rem;
+}
+
+.App.dark .sign-out {
+    background: var(--white);
+    border: 3px solid var(--d-line);
+    box-shadow: -5px 5px 0px var(--d-line);
+}
+
+.App.dark .sign-out svg {
+    color: var(--black);
+}

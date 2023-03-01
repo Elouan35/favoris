@@ -1,0 +1,104 @@
+.view-sites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4vh;
+    padding: 0 5%;
+    padding-bottom: 5%;
+}
+
+.view-sites .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    border-radius: 20px;
+    border: 3px solid var(--black);
+    box-shadow: -5px 5px 0px var(--black);
+    padding: 10px 20px;
+    transition: box-shadow 200ms;
+}
+
+.view-sites .box:hover {
+    box-shadow: -7px 7px 0px var(--black);
+}
+
+.view-sites .box h2 {
+    font-size: 1.5rem;
+}
+
+.view-sites .box ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.view-sites .box ul li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.view-sites .box ul li {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-sites .box ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 100000px;
+    border: 3px solid var(--black);
+    padding: 7px 15px;
+    margin-right: 10px;
+    color: var(--black);
+    text-decoration: none;
+    transition: box-shadow 200ms;
+}
+
+.view-sites .box ul li a:hover {
+    box-shadow: -2px 2px 0px var(--black);
+}
+
+.view-sites .box ul li a img {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.view-sites .box ul li svg {
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.App.dark .view-sites .box {
+    border: 3px solid var(--d-line);
+    box-shadow: -5px 5px 0px var(--d-line);
+}
+
+.App.dark .view-sites .box:hover {
+    box-shadow: -7px 7px 0px var(--d-line);
+}
+
+@media screen and (max-width: 1230px) {
+    .view-sites {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .view-sites {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .view-sites {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

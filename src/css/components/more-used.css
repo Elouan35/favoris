@@ -1,0 +1,129 @@
+.MoreUsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MoreUsed .box {
+    border: 5px solid var(--black);
+    box-shadow: -5px 5px 0px var(--black);
+    background: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 0.5vw;
+    margin: 5vh 0 calc(5vh + 15px) 0;
+    z-index: 0;
+    transition: box-shadow 200ms;
+}
+
+.MoreUsed .box:hover {
+    box-shadow: -10px 10px 0px var(--black);
+}
+
+.MoreUsed .box .right {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 2vh;
+}
+
+.MoreUsed .box .columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.MoreUsed .box .columns .column {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MoreUsed .box .columns .column .percent-box {
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.MoreUsed .box .columns .column .percent-box .percent {
+    width: 100%;
+    min-height: 5vh;
+    max-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f582ae;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 7px;
+    border: 4px solid var(--black);
+    box-shadow: -4px 4px 0px var(--black);
+}
+
+.MoreUsed .box .columns .column .percent-box .click {
+    margin: 1vh 0;
+}
+
+.MoreUsed .box .columns .column a {
+    padding: 0.5vh 0;
+    margin-top: 2vh;
+    font-size: 1.2em;
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.MoreUsed .box .columns .column a:hover {
+    color: var(--white);
+}
+
+.MoreUsed .box .columns .column a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    transform-origin: bottom;
+    transform: scaleY(0.1) translateY(50%);
+    z-index: -1;
+    transition: transform 200ms;
+}
+
+.MoreUsed .box .columns .column a:hover::before {
+    transform: scaleY(1);
+}
+
+.MoreUsed .box .columns .column a svg {
+    margin-right: 7px;
+    font-weight: bolder;
+}
+
+.App.dark .MoreUsed .box {
+    background: var(--d-box-bg);
+    border: 5px solid var(--d-line);
+    box-shadow: -5px 5px 0px var(--d-line);
+}
+
+.App.dark .MoreUsed .box:hover {
+    box-shadow: -10px 10px 0px var(--d-line);
+}
+
+.App.dark .MoreUsed .box .columns .column .percent-box .percent {
+    background: var(--d-line);
+}
+
+@media screen and (max-width: 630px) {
+    .MoreUsed {
+        display: none;
+    }
+}

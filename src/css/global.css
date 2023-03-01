@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORS */
+:root {
+    --black: #222222;
+    --white: #fbfcfc;
+    --d-line: #7f5af0; /* #7f5af0 */
+    --d-box-bg: #fbfcfc; /* #fbfcfc */
+}
+
+.App {
+    min-height: 100vh;
+    background: #fef6e4;
+}
+
+.App.dark {
+    background: var(--black);
+}
+
+.App.dark h1 {
+    color: var(--white);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+    font-family: Raleway;
+    font-weight: 900;
+    line-height: 100%;
+    color: var(--black);
+}
